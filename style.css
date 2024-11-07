@@ -1,0 +1,635 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body, html {
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    height: 700px;
+    background-image: url(./img/welcome-banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    z-index: 1;
+}
+
+header::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 700px;
+    background: rgba(42, 45, 84, .6);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: 100;
+    font-size: 18px;
+}
+
+nav .logo a {
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+nav .logo a:hover {
+    color: blue;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: blue;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+
+.title{
+    padding-top: 15%;
+}
+
+.title h1 {
+    font-size: 30px;
+    margin: 0 0 45px;
+}
+
+.title p {
+    font-size: 18px;
+    text-transform: initial;
+    color: #fff;
+    font-weight: 500;
+    max-width: 735px;
+    margin: 0 auto;
+}
+
+.btn {
+    display: inline-block;
+    width: 230px;
+    height: 60px;
+    background-color: #4E4FFA;
+    color: #fff;
+    border-radius: 3px;
+    margin-top: 55px;
+}
+
+.btn:hover {
+    background-color: blue;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center ;
+    width: 80%;
+    height: 250px;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px 1px black;
+    padding: 10px;
+}
+.input_form {
+    display: flex;
+    flex-wrap: wrap ;
+    flex-direction: row;
+    align-items: center;
+}
+
+.model-search-content {
+    flex: 1 1 30%;
+}
+
+label {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #444a57;
+}
+
+select {
+    
+    height: 60px;
+    display: flex;
+    box-shadow: none;
+    border: 1px solid #f8f8f8;
+    background: #f8f8f8;
+}
+
+select option {
+    font-size: 16px;
+    color: #888f9d;
+    text-transform: capitalize;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-top: 14px;
+}
+
+.search-container .btn-search {
+    width: 160px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4E4FFA;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-search:hover {
+    background-color: #0056b3;
+}
+
+.section-container {
+    padding: 40px;
+    background-color: #f8f9fa;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 40px;
+    margin: 20px;
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.card:hover {
+    background-color: blue;
+    color: white;
+}
+
+.icon {
+    width: 60px;
+    height: 61px;
+    display: inline;
+    font-size: 40px;
+    color: #818889;
+    margin: 0 0 30px;
+    padding: 55px 30px 60px;
+}
+
+.card h3 {
+    font-size: 20px;
+    color: #444A57;
+    margin: 35px 0 20px;
+}
+
+.card p {
+    color: #818889;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 0 35px;
+}
+
+.card:hover .icon,
+.card:hover h3,
+.card:hover p {
+    color: white;
+}
+
+.service-text h1 {
+    padding: 0 0 35px;
+    color: #444A57;
+    font-size: 36px;
+}
+
+.service-text p {
+    margin: 0 0 10px;
+    color: #444A57;
+    font-size: 16px;
+}
+
+.service-text {
+    background: #f8f9fb;
+    padding: 112px 0 120px;
+}
+
+.about-service {
+    display: flex;
+    align-items: center;
+}
+
+.about-service img {
+    max-width: 600px;
+    margin-right: 20px;
+}
+
+.service-title {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    text-align: start;
+    margin-left: 40px;
+}
+
+.service-title h1 {
+    color: #444A57;
+    font-size: 30px;
+    margin: 0 0 26px;
+}
+
+.service-title p {
+    margin: 0;
+    color: #818998;
+    font-size: 16px;
+    line-height: 1.8;
+    text-transform: initial;
+}
+
+.btn-service {
+    display: inline-block;
+    width: 150px;
+    height: 60px;
+    background: #4e4ffa;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    margin-top: 14px;
+    cursor: pointer;
+}
+
+.btn-service:hover {
+    background-color: blue;
+}
+
+.featured-cars-container {
+    padding: 20px;
+}
+
+.car-titles p {
+    color: #444A57;
+    font-size: 16px;
+    margin: 0 0 10px;
+    text-align: center;
+}
+
+.car-titles h1 {
+    font-size: 36px;
+    padding: 0 0 36px;
+    color: #444A57;
+    text-align: center;
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.car-card {
+    margin-bottom: 20px;
+    padding: 15px;  
+    text-align: center;
+    color: #818889;
+    font-size: 16px;
+}
+
+.car-card img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    border: 1px solid #dadfe9;
+    border-radius: 5px;
+    padding:10px;
+  }
+
+.car-info {
+    color: #8C92A0;
+    font-size: 12px;
+    border: 1px solid #dadfe9;
+    border-radius: 5px;
+    padding: 10px;
+    border-top: 0;
+}
+
+.car-title {
+    color: #444A57;
+    font-size: 16px;
+    margin: 0 0 15px;
+}
+
+.car-price {
+    color: #444A57;
+    font-size: 13px;
+    margin: 0 0 10px;
+}
+
+.car-description {
+    color: #818889;
+    font-size: 13px;
+}
+
+.clients-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.section-header h2 {
+    font-weight: 500;
+    color: #444a57;
+    font-size: 36px;
+    padding: 0 0 35px;
+}
+
+.clients-img {
+    width: 100%;
+    margin: 30px;
+    margin-left: 0;
+}
+
+.clients-comment h2 {
+    color: #5E6778;
+    font-size: 16px;
+}
+
+.clients-comment h4 {
+    color: #5E6778;
+    font-size: 16px;
+    margin: 10px 0 0;
+}
+
+.clients-comment p {
+    font-size: 16px;
+    margin: 30px 0 25px;
+    color: #5E6778;
+}
+
+.clients-comment:hover h2,
+.clients-comment:hover h4 {
+    color: white;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #818889;
+    font-size: 16px;
+}
+
+.banner-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 120px 0;
+    cursor: pointer;
+}
+
+.banner-container img {
+    width: 100px;
+}
+
+.footer {
+    background: #2a2d54;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 112px 0 72px;
+    font-size: 16px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 20px;
+    min-width: 200px;
+}
+
+.footer-section h2,
+.footer-section h3 {
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 43px;
+    font-weight: 500;
+}
+
+.footer-section p{
+    font-size: 14px;
+    color: #eeeff6;
+    line-height: 1.6;
+    margin-bottom: 1px;
+    margin-top: 10px;
+}
+.footer-section a {
+    font-size: 14px;
+    color: #eeeff6;
+    line-height: 1.6;
+    
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #cfd0e3;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.footer-box {
+    gap: 20px;
+}
+
+.newsletter {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    position: relative;
+}
+
+.newsletter input {
+    padding: 8px;
+    padding-right: 30px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    width: 100%;
+}
+
+.newsletter i {
+    position: absolute;
+    right: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #585858;
+}
+
+.footer-bottom {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 13px;
+    color: #b1b1b1;
+}
+
+.social-icons a {
+    color: #b1b1b1;
+    margin: 0 5px;
+    text-decoration: none;
+    font-size: 19px;
+}
+
+.social-icons a:hover {
+    color: #ffffff;
+}
+
+.brands-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.brands-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 20px 10px 0;
+}
+
+.brands-list li {
+    margin-bottom: 5px;
+}
+
+.brands-list a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.brands-list ul:nth-child(1),
+.brands-list ul:nth-child(2) {
+    flex: 1;
+}
+
+.bottom-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+
+
+
+@media screen and (max-width : 650px) {
+    .container {
+        flex-direction: column;
+        margin: 0px 10px ;
+        width: 100%;
+        height: auto;
+        transform: none;
+        box-shadow: none;
+        padding: 10px 0px;
+    }
+    select{
+        width: 250px;
+    }
+    .input_form {
+        flex-direction: column;
+    }
+    .header_nav {
+        display: none;
+    }    
+    header::before {
+        height: 700px;        
+    }
+    .about-service{
+        flex-direction: column;
+    }
+    .about-service img {
+        max-width: 300px;
+        margin-right: 0;
+    }
+    .section-header h2{
+        font-size: 24px;
+    }
+    .banner-container{
+        flex-direction: column;
+    }
+    .footer-bottom{
+        flex-direction: column;
+    }
+    .card-wrapper {
+        flex-direction: column;
+    }
+    .bottom-img img {
+        width: 100%;
+        height: auto;
+    }
+    .title h1,
+    .title p {
+        font-size: 24px;
+    }
+}
